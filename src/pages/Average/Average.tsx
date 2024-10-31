@@ -1,14 +1,12 @@
-import { useState, useEffect } from "react";
 import axios from "axios";
+import { useState, useEffect } from "react";
 
 export const Average = () => {
   const [data, setData] = useState<any>({})
 
 
   const getData= async () => {
-    const apiHost = 'http://localhost:3000/dev/average'
-    const apiRes = (await axios.get(apiHost)).data;
-    console.log("response", apiRes);
+    const apiRes = (await axios.get('/average')).data;
     setData(apiRes);
   }
 
