@@ -7,7 +7,8 @@ import { Average } from "./pages/Average/Average";
 import axios from 'axios';
 // TODO: change next url for the one copied when deploying the backend
 // TODO: work with env variables in this project as well
-axios.defaults.baseURL = 'https://jusi5x0y5f.execute-api.ca-central-1.amazonaws.com/dev';
+axios.defaults.baseURL = 'https://o3szowyfk5.execute-api.ca-central-1.amazonaws.com/dev'
+// https://jusi5x0y5f.execute-api.ca-central-1.amazonaws.com/dev';
 axios.defaults.headers.common = {
   'x-api-key': 'bhbxlXGnctGfNJdyoZsu'
 };
